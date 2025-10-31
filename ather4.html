@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ather Charging – Overview (Clone)</title>
+  <style>
+    :root {
+  --bg: #ffffff;
+  --muted: #6b7280;
+  --accent: #0b7285;
+  --card: #f8fafc;
+  --radius: 12px;
+  --gap: 18px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #0f172a;
+  line-height: 1.45;
+}
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+  padding: 14px 22px;
+  border-bottom: 1px solid #eef2f7;
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 20;
+}
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+}
+.logo .accent {
+  color: var(--accent);
+  margin-left: 6px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+}
+.cta {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.container {
+  max-width: 1200px;
+  margin: 28px auto;
+  padding: 0 18px;
+}
+
+
+.hero {
+  display: flex;
+  gap: 28px;
+  align-items: stretch;
+  margin-bottom: 30px;
+}
+.hero-left {
+  flex: 1;
+}
+.hero-right {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 34px;
+  margin: 0 0 8px;
+}
+.tagline {
+  color: var(--muted);
+  margin: 0 0 18px;
+}
+.stats {
+  display: flex;
+  gap: 14px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+}
+.stats li {
+  background: var(--card);
+  padding: 12px 14px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 120px;
+}
+.stats strong {
+  display: block;
+  font-size: 18px;
+}
+.stats small {
+  color: var(--muted);
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 700;
+}
+.btn.primary {
+  background: var(--accent);
+  color: white;
+}
+
+
+.home-charging {
+  margin: 40px 0;
+}
+.home-charging .info-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+.info {
+  background: var(--card);
+  padding: 20px;
+  border-radius: var(--radius);
+  text-align: center;
+}
+.icon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+.info h4 {
+  margin: 0 0 8px;
+}
+.info p {
+  margin: 0;
+  color: var(--muted);
+}
+
+
+.become-host {
+  margin: 40px 0;
+}
+.host-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.host-card .image-placeholder {
+  width: 300px;
+  height: 200px;
+  background: #eef2f7;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+}
+.host-text h4 {
+  margin-top: 0;
+}
+.host-text p {
+  color: var(--muted);
+}
+
+
+.site-footer {
+  margin: 32px 0;
+  text-align: center;
+  color: var(--muted);
+}
+
+
+@media (max-width:900px){
+  .hero {
+    flex-direction: column;
+  }
+  .hero-right {
+    width: 100%;
+  }
+  .home-charging .info-grid {
+    grid-template-columns: 1fr;
+  }
+  .host-card {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Ather<span class="accent">Grid</span></div>
+    <nav class="nav">
+      <a href="#network">Charging Network</a>
+      <a href="#home">Home Charging</a>
+      <a href="#host">Become a Host</a>
+      <button class="cta">Find Station</button>
+    </nav>
+  </header>
+
+  <main class="container">
+   
+    <section id="network" class="hero">
+      <div class="hero-left">
+        <h1>India’s largest two-wheeler fast charging network</h1>
+        <p class="tagline">Fast, reliable and all over Indian roads. :contentReference[oaicite:1]{index=1}</p>
+
+        <ul class="stats">
+          <li>
+            <strong>1.5 km/min*</strong>
+            <small>Charging speed</small>
+          </li>
+          <li>
+            <strong>379+</strong>
+            <small>Cities</small>
+          </li>
+          <li>
+            <strong>1000+</strong>
+            <small>Fast chargers</small>
+          </li>
+        </ul>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#find">Find a Charger</a>
+          <a class="btn" href="#home">Home Charging</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="image-card">
+          <div class="image-placeholder">
+            <img src="https://www.atherenergy.com/_next/image?url=%2Fimages%2Fgridv2%2Fcharger-2.png&w=256&q=75" height="400px" width="200px">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+    <section id="home" class="home-charging">
+      <h2>Charge at home with ease</h2>
+      <p class="muted">Plug into any 5A socket or mount a wall charger at your parking space. :contentReference[oaicite:2]{index=2}</p>
+      <div class="info-grid">
+        <div class="info">
+          <div class="icon">🏠</div>
+          <h4>Portable Charger</h4>
+          <p>Use the portable charger with any standard 5 A plug-point.</p>
+        </div>
+        <div class="info">
+          <div class="icon">🔌</div>
+          <h4>Ather Duo</h4>
+          <p>Wall-mount or carry-along charger: your choice. :contentReference[oaicite:3]{index=3}</p>
+        </div>
+      </div>
+    </section>
+
+  
+    <section id="host" class="become-host">
+      <h2>Have a business space? Become a charger host</h2>
+      <p class="muted">Get reimbursed for electricity costs and get footfall from thousands of EV customers. :contentReference[oaicite:4]{index=4}</p>
+      <div class="host-card">
+        <div class="image-placeholder">
+            <img src="https://media.atherenergy.com/desk.Grid.jpg" height="200px" width="400px" style="margin-left: 200px;">
+            <img src="https://www.atherenergy.com/_next/image?url=%2Fimages%2Fgridv2%2Fcharger-2.png&w=256&q=75" height="200px" width="100px">
+        </div>
+        <div class="host-text">
+            <img src="https://media.atherenergy.com/ather-grid-charging-point-desk.png" height="400px">
+          <h4>Join the Network</h4>
+          <p>Let us install a charger at your parking lot or business location, and benefit from EV traffic.</p>
+          <a class="btn primary" href="#apply">Apply now</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <small>Clone version for demonstration only. *Charging speed approximate. All images are placeholders.</small>
+    </footer>
+  </main>
+</body>
+</html>
