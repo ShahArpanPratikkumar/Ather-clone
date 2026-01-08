@@ -2,3 +2,6 @@ Ather Website Clone is a front-end project created using HTML and CSS that recre
 
 ## Features
 - Responsive Ather Energy scooter landing page clone
+
+## Setup
+Open index.html directly in browser.
