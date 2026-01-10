@@ -5,3 +5,6 @@ Ather Website Clone is a front-end project created using HTML and CSS that recre
 
 ## Setup
 Open index.html directly in browser.
+
+
+---\n*Ather Energy Web Clone - Ready for release.*
